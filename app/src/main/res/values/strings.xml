@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Hterix 2.0</string>
+    <string name="app_name_without_version">Hterix</string>
+    <string name="app_version">2.0</string>
+    <string name="your_email_hint">Ваша почта</string>
+    <string name="your_password_hint">Ваш пароль</string>
+    <string name="login_button_text">Войти</string>
+    <string name="main_tab_name">Главная</string>
+    <string name="communities_tab_name">Сообщества</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="is_read_only_required_text">Включать РЧ в сформированных чатах</string>
+    <string name="launch_button_text">Запустить</string>
+    <string name="default_user_counter_text">0/?</string>
+    <string name="app_label_decorated">{ Hterix 2.0 }</string>
+    <string name="common_user_count_text">Количество пользователей в одном чате: 1</string>
+    <string name="global_area_text">Глобальная область</string>
+    <string name="local_area_text">Локальная область</string>
+    <string name="adver_message_text">Рекламное сообщение</string>
+    <string name="save_button_text">Сохранить</string>
+    <string name="loading_online_text">Получаем полный список активных пользователей...</string>
+    <string name="logout_text">Выйти из аккаунта</string>
+    <string name="messages_type_text">Сообщения</string>
+    <string name="comments_type_text">Комментарии</string>
+</resources>

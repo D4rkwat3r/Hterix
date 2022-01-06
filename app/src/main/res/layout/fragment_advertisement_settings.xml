@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.subFragments.AdvertisementSettingsFragment">
+
+    <TextView
+        android:id="@+id/sliderCounterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/common_user_count_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+    <com.google.android.material.slider.Slider
+        android:id="@+id/usersInPrivateCount"
+        app:trackColorActive="#549AAF"
+        android:layout_width="414dp"
+        app:trackHeight="15dp"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:valueFrom="1"
+        android:stepSize="1"
+        android:valueTo="30"
+        app:thumbRadius="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+
+    <RadioGroup
+        android:id="@+id/areaGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/globalArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/radio_regular"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:drawableStart="@drawable/global_area_icon"
+            android:paddingHorizontal="25dp"
+            android:paddingEnd="30dp"
+            android:text="@string/global_area_text"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/localArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_regular"
+            android:button="@android:color/transparent"
+            android:drawableStart="@drawable/local_area_icon"
+            android:paddingHorizontal="20dp"
+            android:text="@string/local_area_text"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/mailingTypeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/messagesType"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/radio_regular"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:drawableStart="@drawable/messages_type_icon"
+            android:paddingHorizontal="30dp"
+            android:text="@string/messages_type_text"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/commentsType"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_regular"
+            android:button="@android:color/transparent"
+            android:drawableStart="@drawable/comments_type_icon"
+            android:paddingHorizontal="30dp"
+            android:text="@string/comments_type_text"
+            android:textSize="10sp" />
+    </RadioGroup>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="290dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        app:boxBackgroundColor="#F7FFFE"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adverMessageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:inputType="textMultiLine"
+            android:hint="@string/adver_message_text"
+            android:importantForAutofill="no" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:drawableLeft="@drawable/save_settings_icon"
+        android:text="@string/save_button_text" />
+
+</RelativeLayout>

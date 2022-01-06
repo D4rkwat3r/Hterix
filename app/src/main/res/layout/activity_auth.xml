@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AuthActivity">
+
+    <TextView
+        android:id="@+id/app_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:fontFamily="@font/megrim"
+        android:text="@string/app_name_without_version"
+        android:textSize="50sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/app_name_label"
+        android:layout_alignBottom="@id/app_name_label"
+        android:layout_marginStart="7dp"
+        android:layout_toEndOf="@id/app_name_label"
+        android:fontFamily="@font/electrolize"
+        android:text="@string/app_version"
+        android:textColor="#1A8E34"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="25dp"
+                android:autofillHints="emailAddress"
+                android:inputType="textEmailAddress"
+                android:layout_gravity="center"
+                android:background="@drawable/input_forms_style"
+                android:hint="@string/your_email_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            android:layout_marginTop="25dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="25dp"
+                android:autofillHints="password"
+                android:inputType="textPassword"
+                android:layout_gravity="center"
+                android:background="@drawable/input_forms_style"
+                android:hint="@string/your_password_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/loginSubmitButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@drawable/key_login_icon"
+            android:paddingVertical="12dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#FF016887"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:text="@string/login_button_text" />
+    </LinearLayout>
+</RelativeLayout>

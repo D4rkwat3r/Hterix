@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.subFragments.RunFragment">
+
+    <ImageView
+        android:id="@+id/logoutButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/door_logout_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="5dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/iceberg"
+        android:text="@string/app_label_decorated"
+        android:textSize="45sp" />
+    <TextView
+        android:id="@+id/doneUsersCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_user_counter_text"
+        android:layout_centerInParent="true"
+        android:textSize="60sp"/>
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:text="@string/launch_button_text" />
+
+    <CheckBox
+        android:id="@+id/isReadOnlyCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/is_read_only_required_text" />
+
+</RelativeLayout>
